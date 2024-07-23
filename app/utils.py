@@ -7,8 +7,7 @@ import os
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-print(f"key:{OPENAI_API_KEY}")
-# OPENAI_API_KEY = 'sk-proj-xBaAAIQXecjRwCUtKSLST3BlbkFJNexJXmslTr1qQ3qQkjS9'
+# print(f"key:{OPENAI_API_KEY}")
 openai.api_key = OPENAI_API_KEY
 
 def perform_translation(task_id: int, text: str, languages: list, db:Session):
